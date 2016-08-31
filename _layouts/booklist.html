@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="home">
+  {{ content }}
+  <ul class="list-of-things">
+    {% for post in site.categories[{{page.category}}] %}
+      {% assign currentdate = post.date | date: "%B %Y" %}
+      {% if currentdate != date %}
+        {% unless forloop.first %}</ul>{% endunless %}
+        
+        <ul>
+        {% assign date = currentdate %}
+      {% endif %}
+      {% include list-item.html url=post.url title=post.title date=post.date %}
+      {% if forloop.last %}</ul>{% endif %}
+    {% endfor %}
+  </ul>
+</div>
