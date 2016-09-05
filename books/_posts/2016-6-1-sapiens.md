@@ -12,7 +12,7 @@ Rating 8.0/10
 
 My Summary:
 
-A fascinating account of trajectory of humankind. Beginning at the split of the various homo species, Harari tracks the causes of human evolution and progression. Funny how we are motivated by mostly the same things now, as 30,000 years ago.
+A fascinating account of humankind's trajectory. Beginning at the split of the various homo species, Harari tracks the causes of human evolution and progression. Funny how we are motivated by mostly the same things now, as 30,000 years ago.
 
 Quotes:
 
