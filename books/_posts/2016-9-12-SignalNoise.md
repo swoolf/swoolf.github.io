@@ -12,7 +12,7 @@ Rating 8/10
 
 My Summary:
 
-A treatise that explores our fascination with predictions, as well as the numerous shortcomings that bubble up when we, humans, attempt to predict the future. In short, the name of the game bayesian statistics. According to the author, no other method comes close to its accuracy. Simply put, Bayesian statistics relies on estimating the likelihood of an event, and then continually updating that even based on new information. Bouncing from earthquakes, to politics, baseball, and terrorism, Silver does a great job of sharing his obsession with the reader. Also, this book helped me discover my favorite Tufts’ grad, [Eugene Fama](https://en.wikipedia.org/wiki/Eugene_Fama), (He called BS on mutual fund managers back in the 1960’s)
+A treatise that explores our fascination with predictions, as well as the numerous shortcomings that bubble up when we, humans, attempt to predict the future. In short, the name of the game is bayesian statistics. According to the author, no other method comes close to its accuracy. Simply put, Bayesian statistics relies on estimating the likelihood of an event, and then continually updating that even based on new information. Bouncing from earthquakes, to politics, baseball, and terrorism, Silver does a great job of sharing his obsession with the reader. Also, this book helped me discover my favorite Tufts’ grad, [Eugene Fama](https://en.wikipedia.org/wiki/Eugene_Fama), (He called BS on mutual fund managers back in the 1960’s)
 
 Quotes:
 
