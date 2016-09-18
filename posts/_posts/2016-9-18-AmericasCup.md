@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sailing Innovation in the America's Cup"
-tags: work life balance 
+tags: Sailing Engineering Adrenaline CarbonFiber
 image: assets/images/post-images/AmericasCup/boatbridge.jpg
 description: >
   the only perscription is...
