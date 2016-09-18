@@ -15,7 +15,7 @@ The America’s Cup is the pinnacle of the international sailing world. Every fe
 A good way to get an idea of the boats is to look at their Sail Size to Weight ratio as it provides a rough estimate of the acceleration and max speed these boats can acheive. (Though it doesn’t fully account for the hydrofoil lift, and massive down wind sails modern boats have).
 
 
-![Sail Power](../assets/images/post-images/AmericasCup/SailPower.png)
+![Sail Power](../assets/images/post-images/AmericasCup/SailPower2.png)
 
 As you can see, from years 1850 to 2000, a miniscule rate of innovation occurred. Power ratios increased by only a few points per year. All of these boats were typical monohulls with either a schooner (see 1851) or sloop (see 1988) rig. As we reached the 21st century, the entire industry changed. High end sailing morphed into a high adrenaline, highly financed spitting contest between billionaires. And honestly, we are all better for it. These boats are jaw dropping. Eight million dollars of pure efficiency.
 
