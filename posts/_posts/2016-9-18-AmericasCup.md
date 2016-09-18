@@ -23,7 +23,7 @@ Now we have moved into the realm of carbon fiber, hydrofoils, and massive down w
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/79KWKjcjwLU?rel=0" frameborder="0" allowfullscreen></iframe>
 
-Header photo &copy; dn.sailingscuttlebutt.com
+Header photo &copy; dn.sailingscuttlebutt.com<br>
 Visualization photo cred: https://en.wikipedia.org/wiki/America%27s_Cup
 techweekeurope.co.uk
 {: style="color:gray; font-size: 80%; text-align: left;"}
