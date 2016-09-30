@@ -2,7 +2,7 @@
 layout: post
 title: "Slovenia, My New Home"
 tags: Life Liberty PursuitOfHappiness
-image: assets/images/post-images/Slovenia/cover.jpg
+image: assets/images/post-images/Slovenia/cover.JPG
 description: >
   the only perscription is...
 ---
@@ -16,16 +16,16 @@ Both Matevs and his wife work at schools (university and primary) that are withi
 While its not a country that currently focuses all of its efforts on industry and business, everyone I met was incredibly mindful and thoughtful. Granted, I was hanging out with a population who worked on improving the educational system. Every conversation was littered with comments of nuance, curiosity, and genuine interest. Not only that, these people were acutely aware of the world around them. Fascinated, I asked question after question about the massive immigration into Europe, and how that effects a small nation of two million people. Slovenia is far from immune from these acute social and humanitarian issues, and erected a [wall around the country](http://www.nytimes.com/2015/11/12/world/europe/slovenia-border-fence-migrants-refugees.html). I can only imagine the moral debate these voters and policy makers go through on a day to day basis. Their answers are intimately tied to their perspective, experiences and history. And what a history. In 1990, Slovenia was a part of Yugoslavia, and many of its current citizens saw first hand the conflicts and political upheavals that occurred. Additionally, Slovenia was an active battleground in both WWI and WWII. Alenka, Matevz wife, mentioned a few conversations she had with her grandfather, who fought in WWI. The mental summersaults this man went through must have been astounding. I saw a few of the bunkers and battle sites in the Soca River valley. I always imagine World War battle sites as I’ve heard the Western Front described, muddy, cold, ugly. These were the opposite. A glorious green steep valley, with an aqua river running through its center. The blood, death, and fighting that occurred here seem [out of place](http://www.telegraph.co.uk/travel/destinations/europe/slovenia/738596/Life-and-death-on-Slovenias-forgotten-front.html), to say the least. Alenka was unable to learn much, as her grandfather didn’t want to talk, always saying “Oh, that was so long ago, another time”. But this man watched his city, his home burn. He was left with nothing.
 I am always interested in hearing the perspectives of our military, both active and veterans. Though, to me, their stories always feel so foreign. A picture will come to my mind, but it is not of any place I have considered home. America’s fighting, for the most part, has occurred over seas. For better or worse, this helps me compartmentalize these wars. I wonder how Alenka’s grandfather dealt with this, whether he could mentally separate his home memories from his war memories even though they occurred on the same piece of ground.
 
-<img src="../assets/images/post-images/Slovenia/SocaRiver.jpg" width="300">
-<img src="../assets/images/post-images/Slovenia/bunker.jpg" width="300">
+<img src="../assets/images/post-images/Slovenia/SocaRiver.JPG" width="300">
+<img src="../assets/images/post-images/Slovenia/bunker.JPG" width="300">
 <br>
 Soca River and Bunkers from WWI &copy; Woolf 2016
 {: style="color:gray; font-size: 80%; text-align: center;"}
 
 On the other hand, The beauty is astounding. Giant mountains in the north, full of hiking trails and mountain huts. Beautiful river valleys, carved out by thousands of years of glacial melt. I didn’t make it to the east, but I hear its full of natural thermal springs to swim in. I spent a day climbing Triglav, the tallest peak in Slovenia. It towers up at 2864 meters (9396 feet), where you can gaze out over the entire country (actually, on a clear day you can see Austria, Italy and Croatia). A delightful and strenuous climb. The steeper trails are lined with 'via ferrata’, Iron steps and holds that make it possible to navigate sheer cliffs without falling. Often, people will use a climbing harness to clip in as the traverse the rock.
 
-<img src="../assets/images/post-images/Slovenia/ferrata.jpg" width="300">
-<img src="../assets/images/post-images/Slovenia/TriglavSide.jpg" width="300">
+<img src="../assets/images/post-images/Slovenia/ferrata.JPG" width="300">
+<img src="../assets/images/post-images/Slovenia/TriglavSide.JPG" width="300">
 <br>
 Via Ferrata, Triglav &copy; Woolf 2016
 {: style="color:gray; font-size: 80%; text-align: center;"}
@@ -37,7 +37,7 @@ I already am working my way to fluency in the language. Though, it will take qui
 
 So, if you ever want a couch to sleep on in an amazing country, drop me a line. I’ll be there living life how it should be lived.
 
-<img src="../assets/images/post-images/Slovenia/Piran.jpg" width="300">
+<img src="../assets/images/post-images/Slovenia/Piran.JPG" width="300">
 <br>
 Piran &copy; Woolf 2016
 {: style="color:gray; font-size: 80%; text-align: left;"}
