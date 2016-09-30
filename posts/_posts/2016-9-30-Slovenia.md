@@ -19,7 +19,7 @@ I am always interested in hearing the perspectives of our military, both active 
 <img src="../assets/images/post-images/Slovenia/SocaRiver.jpg" width="300">
 <img src="../assets/images/post-images/Slovenia/bunker.jpg" width="300">
 <br>
-Soca River, and Bunkers from WWI &copy; Woolf 2016
+Soca River and Bunkers from WWI &copy; Woolf 2016
 {: style="color:gray; font-size: 80%; text-align: center;"}
 
 On the other hand, The beauty is astounding. Giant mountains in the north, full of hiking trails and mountain huts. Beautiful river valleys, carved out by thousands of years of glacial melt. I didn’t make it to the east, but I hear its full of natural thermal springs to swim in. I spent a day climbing Triglav, the tallest peak in Slovenia. It towers up at 2864 meters (9396 feet), where you can gaze out over the entire country (actually, on a clear day you can see Austria, Italy and Croatia). A delightful and strenuous climb. The steeper trails are lined with 'via ferrata’, Iron steps and holds that make it possible to navigate sheer cliffs without falling. Often, people will use a climbing harness to clip in as the traverse the rock.
