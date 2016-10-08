@@ -2,7 +2,7 @@
 layout: post
 title: "How to Steal a Bicycle"
 tags: badIdea nefarious
-image: assets/images/post-images/BikeTheft/bikethieves.JPG
+image: assets/images/post-images/BikeTheft/bikethieves.jpg
 description: >
   the only perscription is...
 ---
