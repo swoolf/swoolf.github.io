@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<!-- Example based on http://bl.ocks.org/mbostock/3887118 -->
+<!-- tooltip example from http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html -->
+
+<style>
+body {
+  font: 11px sans-serif;
+}
+    
+  h1 {
+    text-align: center;
+}
+form { 
+margin: 0 auto; 
+width:250px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+
+.tooltip {
+  position: absolute;
+  width: 330px;
+  height: 42px;
+  pointer-events: none;
+  background: lightsteelblue;
+  border-radius: 3px;   
+}
+.info{
+  position: absolute;
+    top:330px;
+    left:50px;
+  width: 900px;
+  height: 200px;
+  pointer-events: none;
+  background: lightblue;
+  border-radius: 3px;  
+    font: 22px sans-serif;
+    }
+.infobox{
+    position: absolute;
+    top:290px;
+    left:50px; 
+    width: 900px;
+    height: 30px;
+    pointer-events: none;
+  background: pink;
+  border-radius: 3px;  
+    
+    }
+    
+</style>
+<body>
+    <h1>Idea Progression Chart</h1>
+
+<!--<script src="https://d3js.org/d3-dispatch.v1.min.js"></script>-->
+<!--<script src="http://d3js.org/d3.v3.min.js"></script>-->
+<script src="//d3js.org/d3.v4.min.js"></script>
+    
+<form name="ideaform" onSubmit="return ideaClick()">
+            <input type="text" id="ideaVal" placeholder="Search for idea&hellip;">
+            <input name="Submit"  type="submit" value="Search" >
+        </form>
+<form name="userform" onSubmit="return userClick()">
+            <input type="text" id="userVal" placeholder="Search user&hellip;">
+            <input name="Submit"  type="submit" value="Search" >
+        </form>
+    
+    
+<script>
+
+    var dispatch = d3.dispatch("refresh","off","load");
+
+var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 960 - margin.left - margin.right,
+    height = 250 - margin.top - margin.bottom;
+
+/* 
+ * value accessor - returns the value to encode for a given data object.
+ * scale - maps value to a visual display encoding, such as a pixel position.
+ * map function - maps from data value to display value
+ * axis - sets up axis
+ */ 
+
+// setup x 
+var xValue = function(d) { return d.theDate;}, // data -> value
+    xScale = d3.scaleLinear().range([0, width]), // value -> display
+    xMap = function(d) { return xScale(xValue(d));}, // data -> display
+    xAxis = d3.axisBottom().scale(xScale).ticks(0);
+
+// setup y
+var yValue = function(d) { return d.thread;}, // data -> value
+    yScale = d3.scaleLinear().range([height, 0]), // value -> display
+    yMap = function(d) { return yScale(yValue(d));}, // data -> display
+    yAxis = d3.axisLeft().scale(yScale).ticks(0);
+
+// setup fill color
+var cValue = function(d,word) { 
+    var dotCol;
+    //console.log(word);
+    try{
+    if (d.post.toLowerCase().indexOf(word) !== -1) dotCol = d3.rgb(1,1,205); else dotCol = d3.rgb(135,206,250)
+        
+    if ('*'.concat( d.userID)==word){
+        consolte.log("here");
+        dotColor=d3.rgb(255,30,60);}
+    }
+    catch(err){
+        console.log(d)
+        dotCol = d3.rgb(0,255,0); }
+    return dotCol
+        }, //d.hasword;},
+    color = d3.scaleOrdinal(d3.schemeCategory10);
+    
+var getWordz = function(d, word) {
+    var wList = d.post.toLowerCase().split(" ");
+    var index = wList.indexOf(word);
+    var snippet='';
+    if (index !== -1) {
+        snippet+='...';
+        for(i=-5;i<5;i++){
+            if(wList[index+i]){snippet+=wList[index+i]+' ';}
+        }
+        snippet+='...';
+        }
+    return snippet;
+    };
+
+// add the graph canvas to the body of the webpage
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom + 200)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+// add the tooltip area to the webpage
+var tooltip = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+
+var info = d3.select("body").append("div")
+    .attr("class", "info")
+    .attr("id","maybe")
+    .style("opacity", 100);
+    //.text("Click a post to display info");
+    
+var textz = info.append('textz')
+    .text('Click a post to display information');
+    //.attr("class","info");
+    
+var searchWord = 'thiswontbeintheset';
+    
+function ideaClick(event){
+                var sWord=document.getElementById("ideaVal").value.toLowerCase();
+                var field = document.getElementById("userVal");
+                field.value=field.defaultValue;
+                dispatch.call("refresh", this, sWord);
+                return false;
+            }
+function userClick(event){
+        var sWord=document.getElementById("userVal").value.toLowerCase();
+        var field = document.getElementById("ideaVal");
+        field.value=field.defaultValue;
+        var str = '*'.concat(sWord);
+        dispatch.call("refresh", this, str );
+        return false;
+            }
+    
+// load data
+var lastClick;
+    
+d3.csv("nov2_4.csv", function(error, data) {
+
+      // change string (from CSV) into number format
+      data.forEach(function(d) {
+        d.theDate = +d.theDate;
+        d.thread = +d.thread;
+      });
+    dispatch.call("load", this, data);
+    dispatch.call("refresh", this, searchWord)
+});
+    
+dispatch.on("load.dots", function(data){
+
+      // don't want dots overlapping axis, so add in buffer to data domain
+      xScale.domain([d3.min(data, xValue)-1, d3.max(data, xValue)+1]);
+      yScale.domain([d3.min(data, yValue)-1, d3.max(data, yValue)+1]);
+
+      // x-axis
+      svg.append("g")
+          .attr("class", "x axis")
+          .attr("transform", "translate(0," + height + ")")
+          .call(xAxis)
+        .append("text")
+          .attr("class", "label")
+          .attr("x", width)
+          .attr("y", +15)
+          .style("text-anchor", "middle")
+          .text("Time");
+
+
+      // y-axis
+      svg.append("g")
+          .attr("class", "y axis")
+          .call(yAxis)
+        .append("text")
+          .attr("class", "label")
+          .attr("transform", "rotate(-90)")
+          .attr("y", 6)
+          .attr("dy", ".71em")
+          .style("text-anchor", "end")
+          .text("Thread");
+
+        
+
+      // draw dots
+    dispatch.on("refresh.dots", function(word){
+          svg.selectAll(".dot")
+              .data(data)
+            .enter()
+              .append("circle")
+              //.attr("class", "dot")
+              .attr("r", 0)
+              .attr("cx", xMap)
+              .attr("cy", yMap)
+              .style("fill", function(d) { return cValue(d,word);}) 
+              .on("mouseover", function(d) {
+                d3.select(this).attr("r", 7);
+                  tooltip.transition()
+                       .duration(500)
+                       .style("opacity", .9);
+                  tooltip.html('userID ' + d.userID  + "<br/> " + d.prompt 
+                    + "<br/>" + getWordz(d,word) )
+                       .style("left", (d3.event.pageX + 5) + "px")
+                       .style("top", (d3.event.pageY - 28) + "px");
+              })
+              .on("mouseout", function(d) {
+                d3.select(this).attr("r", 3.5);
+                  tooltip.transition()
+                       .duration(500)
+                       .style("opacity", 0);
+              })
+          .on("click", function(d){
+              console.log(word);
+              d3.selectAll("circle").attr("r", 3.5).style("fill", function(d) { return cValue(d,word);});
+               d3.select(this).attr("r", 10).style("fill", d3.rgb(250,0,0));
+              textz.html('userID ' + d.userID + "<br/> " + d.prompt 
+                    + "<br/>" +'<font size="2">'+d.post+"</font>");
+              
+              lastClick = d3.select(this);
+              var bbox = textz.node().getBoundingClientRect();
+              info.transition().style("height",bbox.height+"px"); 
+          })
+          //transition play
+          .style("opacity", .5)
+          .transition()
+          .style("opacity", 1)
+              .attr("r",5)
+          .delay(200)
+            .transition()
+          .attr("r",3.5);
+    });
+
+      // draw legend
+      var legend = svg.selectAll(".legend")
+          .data(color.domain())
+        .enter().append("g")
+          .attr("class", "legend")
+          .attr("transform", function(d, i) { return "translate(0, 0)"; });
+
+      // draw legend colored rectangles
+      legend.append("rect")
+          .attr("x", width - 18)
+          .attr("width", 18)
+          .attr("height", 18)
+          .style("fill", color);
+
+      // draw legend text
+      legend.append("text")
+          .attr("x", width - 24)
+          .attr("y", 9)
+          .attr("dy", ".35em")
+          .style("text-anchor", "end")
+          .text( function(d) { if (d==1) return 'Contains Word'; else return 'No Word'} ); //(d==1) ?  'Contains' : 'Not' ; );
+    
+});
+
+</script>
+</body>
+</html>
