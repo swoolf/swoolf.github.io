@@ -23,6 +23,7 @@ layout: default
     {{ content }}
   </div>
   {% if site.environment == "production" %}
+    {% include newsletter.html %}
    {% include disqus.html %}
   {% endif %}
 </article>
