@@ -3,7 +3,7 @@ layout: post
 postorder: 3
 title: "CookieRobot"
 tags: LEGO Robot Cookies CEEO
-image: assets/images/project-images/CookieRobot/cookieBot.jpg
+image: assets/images/project-images/CookieRobot/kid.jpg
 icon: assets/images/project-images/CookieRobot/cookieSign.jpg
 description: >
   the only perscription is...
