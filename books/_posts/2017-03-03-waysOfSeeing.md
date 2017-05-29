@@ -2,7 +2,7 @@
 layout: post
 title: "Ways of Seeing - John Berger"
 tags: Inspire Think Big
-image: assets/images/book-images/waysOfSeeing/cover.jpg
+image: assets/images/book-images/WaysOfSeeing/cover.jpg
 description: > 
   the only perscription is...
 ---
