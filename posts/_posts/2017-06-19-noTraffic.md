@@ -28,7 +28,7 @@ With these GPS Spoofing tools in hand, take your 1000 smartphones out of your tr
 
 <img  src="https://www.wired.com/images_blogs/autopia/2009/06/bostontraffic.jpg" />
 
-_*Ok, fine, you caught me, I used Google. That company is everywhere..._
+_*Ok, fine, you caught me, I used Google Search. That company is everywhere..._
 {: style="color:gray; font-size: 80%; text-align: left;"}
 
 Header photo &copy; Google Maps<br>
