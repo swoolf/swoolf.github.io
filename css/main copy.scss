@@ -1,0 +1,186 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family:  "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+$title-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:    16px;
+$small-font-size:   $base-font-size * 0.875;
+$base-font-weight:  400;
+$title-font-weight: 700;
+$base-line-height:  1.5;
+
+$spacing-unit:      30px;
+
+$text-color:        #111;
+$background-color:  #f5f5f5;
+$brand-color:       #28ABE3;
+
+$grey-color:        #555;
+$grey-color-light:  lighten($grey-color, 40%);
+$grey-color-dark:   darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:     800px;
+
+$on-palm:           600px;
+$on-laptop:         800px;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "base",
+  "layout",
+  "syntax-highlighting"
+;
+//here is up.css for cal
+
+//section {
+//	display: inline-block;
+//}
+//
+//blockquote {
+//	font-size: 15px !important;
+//}
+//
+//.articles {
+//	width:100%;
+//}
+//
+//.separator {
+//	float: none;
+//	width: 100%;
+//	text-align: center;
+//}
+//
+// /* Cal */
+//#cal {
+//	width: 100%;
+//	margin: 30px 0;
+//	height:auto; 
+//    overflow:auto;
+//}
+//
+//#cal2 {
+//	width: 100%;
+//	margin: 30px 0;
+//	height:auto; 
+//    overflow:auto
+//}
+//
+// .month-cal {
+//  width: 210px;
+//  height: 170px;
+//  font-size: 12px;
+//  text-align: center;
+//  position: relative;
+//  float: left;
+//  margin-bottom: 10px;
+//}
+//.month-cal .month-str {
+//  bottom: 0;
+//  position: absolute;
+//  width: 100%;
+//}
+//.day-cal {
+//  width: 20px;
+//  height: 20px;
+//  background-color: #efefef;
+//  border-radius: 6px;
+//  position: absolute;
+//  margin: 2px;
+//}
+//
+//.Mo {
+//  left: 0px;
+//}
+//.Tu {
+//  left: 22px;
+//}
+//.We {
+//  left: 44px;
+//}
+//.Th {
+//  left: 66px;
+//}
+//.Fr {
+//  left: 88px;
+//}
+//.Sa {
+//  left: 110px;
+//  background-color: #ddd;
+//}
+//.Su {
+//  left: 132px;
+//  background-color: #ddd;
+//}
+//.week6 {
+//  top: 0px;
+//}
+//.week5 {
+//  top: 22px;
+//}
+//.week4 {
+//  top: 44px;
+//}
+//.week3 {
+//  top: 66px;
+//}
+//.week2 {
+//  top: 88px;
+//}
+//.week1 {
+//  top: 110px;
+//}
+//.Training {
+//  background-color: #a02073;
+//}
+//.Interview {
+//  background-color: #dbb64b;
+//}
+//.Project {
+//  background-color: #67c7d3;
+//}
+//.Conference {
+//  background-color: #2d616f;
+//}
+//.Article {
+//  background-color: #eb3721;
+//}
+//.Run {
+//  background-color: #a02073;
+//}
+//.Squash {
+//  background-color: #dbb64b;
+//}
+//.Soccer {
+//  background-color: #67c7d3;
+//}
+//.Muscles {
+//  background-color: #2d616f;
+//}
+//.cursor {
+//	cursor: pointer;
+//}
+//
+//.intro {
+//	margin-top: 20px;
+//}
+//
+//.large-tooltip {
+//	width: 500px;
+//}
