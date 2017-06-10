@@ -65,7 +65,7 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
-$.getJSON('/Cal/assets/events.json', function(data){
+$.getJSON('/Cal/assets/project_events.json', function(data){
 	$.each(data, function(id, evt) {
 		evt_start_date = new moment.utc(evt.startdate).format("X");
 		evt_end_date = new moment.utc(evt.enddate).format("X");

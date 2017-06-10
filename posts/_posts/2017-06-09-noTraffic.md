@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How To Never Hit Traffic Again"
+title: "How to Never Hit Traffic Again"
 tags: Google Traffic Freedom
 image: assets/images/post-images/noTraffic/cover.png
 description: >
