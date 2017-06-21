@@ -106,5 +106,15 @@
     "enddate": "2017-06-18T00:00:00.000Z",
     "startdate": "2017-06-18T00:00:00.000Z",
     "title": "Futsal"
+  },
+  
+  {
+    "location": "",
+    "text": "Soccer",
+    "type": "Soccer",
+    "url": "",
+    "enddate": "2017-06-20T00:00:00.000Z",
+    "startdate": "2017-06-20T00:00:00.000Z",
+    "title": "Pickup-Harvard"
   }
 ]
