@@ -107,7 +107,6 @@
     "startdate": "2017-06-18T00:00:00.000Z",
     "title": "Futsal"
   },
-  
   {
     "location": "",
     "text": "Soccer",
@@ -116,5 +115,15 @@
     "enddate": "2017-06-20T00:00:00.000Z",
     "startdate": "2017-06-20T00:00:00.000Z",
     "title": "Pickup-Harvard"
+  },
+  {
+    "location": "",
+    "text": "River Run, 2 Miles",
+    "type": "Run",
+    "url": "",
+    "enddate": "2017-06-22T00:00:00.000Z",
+    "startdate": "2017-06-22T00:00:00.000Z",
+    "title": "2 Miles"
   }
+  
 ]
