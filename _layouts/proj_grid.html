@@ -9,9 +9,11 @@ layout: default
         {% for j in (1..5) %} 
             {% for post in site.categories[{{page.category}}] %}
                 {% if j == post.postorder %}
-                      {% include project-item.html url=post.url title=post.title icon=post.icon %}
+                      {% if post.category !=  page.category %}
+                          {% include project-item.html url=post.url title=post.title icon=post.icon %}
+                          {%assign i = i | plus: 1%}
+                      {% endif %}
 
-                      {%assign i = i | plus: 1%}
         
                       {% if i == 3  %}
                       <br>
