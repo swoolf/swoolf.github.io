@@ -187,6 +187,24 @@
     "enddate": "2017-07-09T00:00:00.000Z",
     "startdate": "2017-07-09T00:00:00.000Z",
     "title": "Futsal"
+  },
+  {
+    "location": "",
+    "text": "Squash",
+    "type": "Other",
+    "url": "",
+    "enddate": "2017-07-11T00:00:00.000Z",
+    "startdate": "2017-07-11T00:00:00.000Z",
+    "title": "Squash"
+  },
+  {
+    "location": "",
+    "text": "River Run, 2 Miles",
+    "type": "Other",
+    "url": "",
+    "enddate": "2017-07-12T00:00:00.000Z",
+    "startdate": "2017-07-12T00:00:00.000Z",
+    "title": "Bike NYC"
   }
   
 ]
