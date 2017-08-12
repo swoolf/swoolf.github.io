@@ -250,6 +250,15 @@
     "startdate": "2017-08-05T00:00:00.000Z",
     "title": "Goldilocks Notifications",
     "url": "../Notifications"
+  },
+    {
+    "location": "",
+    "text": "",
+    "type": "Post ",
+    "enddate": "2017-08-12T00:00:00.000Z",
+    "startdate": "2017-08-12T00:00:00.000Z",
+    "title": "Memory",
+    "url": "../Memory"
   }
     
 ]
