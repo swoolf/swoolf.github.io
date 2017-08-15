@@ -349,5 +349,23 @@
     "enddate": "2017-08-10T00:00:00.000Z",
     "startdate": "2017-08-10T00:00:00.000Z",
     "title": "Teamworks"
+  },
+    {
+    "location": "",
+    "text": "Lake Swim",
+    "type": "Other",
+    "url": "",
+    "enddate": "2017-08-13T00:00:00.000Z",
+    "startdate": "2017-08-13T00:00:00.000Z",
+    "title": "Lake Swim: .5 mile"
+  },
+    {
+    "location": "",
+    "text": "Squash",
+    "type": "Other",
+    "url": "",
+    "enddate": "2017-08-15T00:00:00.000Z",
+    "startdate": "2017-08-15T00:00:00.000Z",
+    "title": "Squash"
   }
 ]
