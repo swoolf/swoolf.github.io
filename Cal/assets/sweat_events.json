@@ -385,5 +385,41 @@
     "enddate": "2017-08-18T00:00:00.000Z",
     "startdate": "2017-08-18T00:00:00.000Z",
     "title": "Squash"
+  },
+    {
+    "location": "",
+    "text": "Lake Swim",
+    "type": "Other",
+    "url": "",
+    "enddate": "2017-08-20T00:00:00.000Z",
+    "startdate": "2017-08-20T00:00:00.000Z",
+    "title": "Lake Swim: .5 mile"
+  },
+    {
+    "location": "",
+    "text": "Baxter Backpacking",
+    "type": "Other",
+    "url": "",
+    "enddate": "2017-08-23T00:00:00.000Z",
+    "startdate": "2017-08-21T00:00:00.000Z",
+    "title": "Baxter Backpacking"
+  },
+    {
+    "location": "",
+    "text": "Lake Swim",
+    "type": "Other",
+    "url": "",
+    "enddate": "2017-08-25T00:00:00.000Z",
+    "startdate": "2017-08-25T00:00:00.000Z",
+    "title": "Lake Swim: .5 mile"
+  },
+    {
+    "location": "",
+    "text": "River Run, 2 Miles",
+    "type": "Run",
+    "url": "",
+    "enddate": "2017-08-28T00:00:00.000Z",
+    "startdate": "2017-08-28T00:00:00.000Z",
+    "title": "2 Miles"
   }
 ]
