@@ -3,7 +3,7 @@ layout: post
 title: "OnlineClassroom"
 postorder: 2
 tags: EnchantedObject Teacher Student Tool
-image: assets/images/project-images/enchantedObjects/interlace/cover_interlace.jpg
+image: assets/images/project-images/enchantedObjects/interlace/cover2.jpg
 icon: assets/images/project-images/enchantedObjects/icon_interlace.png
 description: >
   the only perscription is...
