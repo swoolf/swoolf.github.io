@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="//cdn.jsdelivr.net/particle-api-js/5/particle.min.js">
+</script>
+<head>
+    <style>
+        .auto            { cursor: auto; }
+        .default         { cursor: default; }
+        .pointer         { cursor: pointer; }
+    </style>
+    </head>
+<body>
+    
+<div style="width: 520px; overflow: hidden;">
+    <div style="width: 260px; float: left;"> 
+        <img src="https://i.pinimg.com/originals/ab/92/ca/ab92cad2f568bb730febe4d27b4b1f0e.png" alt="unfinished bingo card" onclick="doFunction('up')" width="200" hspace="40" class="pointer"/> 
+        <center id="up"></center>
+    </div>
+    <div style="width:260px; float: right; "> 
+        <img src="http://www.clker.com/cliparts/5/2/5/8/13476359851958638477thumbs-down-icon-red-hi.png" alt="unfinished bingo card" onclick="doFunction('down')" width="200" hspace="40" class="pointer" />
+        <br>
+        <center id="down"></center>
+    </div>
+</div>
+    
+</body>
+    
+<script>    
+var particle = new Particle();
+var token ='f9b796cbd8d6eec5fe8dba8161a448a66024b8e3' ;
+var devID = '30001d001747343438323536';
+    
+window.onload = refreshCounts();
+window.setInterval(function(){refreshCounts();}, 1000);
+    
+function refreshCounts(){
+    doFunction('checkUp');
+    doFunction('checkDown');
+    }
+    
+function updateCounts(count, loc){
+    if (loc == 'up' || loc=='checkUp'){
+        document.getElementById('up').innerHTML = count;
+        }
+    else if (loc == 'down' || 'checkDown'){
+        document.getElementById('down').innerHTML = count;
+        }
+    }    
+    
+function scroll(){
+    console.log('scroll');
+    document.body.style.cursor = "pointer";
+    } 
+
+function doFunction(inputString){
+    var count=0;
+    var fnPr = particle.callFunction({ deviceId: devID, name: 'onClick', argument: inputString, auth: token });
+
+    var count = fnPr.then(
+      function(data) {
+            updateCounts( data['body'].return_value, inputString);
+            
+      }, function(err) {
+        console.log('An error occurred:', err);
+      });
+    }
+    
+
+    </script>
+</html>
