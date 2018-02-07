@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script type="text/javascript" src="harmonograph.js"></script>
+    </head>
+<body>
+
+<canvas id="myCanvas" width="600" height="600"
+style="border:1px solid #000000;">
+</canvas>
+
+<script>
+    var canvasTag = document.getElementById("myCanvas");
+    var ctx = canvasTag.getContext("2d");
+
+    var amp = 100;
+    var freq = 10;
+    var phase = 0;
+    var damping = 0.01;
+    var plane = 'x';
+
+    harmo = new harmonographClass(ctx, canvasTag, [600,600]);
+//    harmo.addPendulum(amp,freq,phase,damping,plane);
+//    harmo.addPendulum(100,.1,phase,damping,'y');
+    harmo.addPendulum(200.0,10.0,0.01,0.0,'x');
+    harmo.addPendulum(200.0,10.1,0.01,0.5,'y');
+    harmo.drawSlow();
+</script>
+    
+</body>
+</html>
