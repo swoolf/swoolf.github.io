@@ -35,5 +35,12 @@ How to Fail at Almost Everything and Still Win Big (Scott Adams) - Rating 9.0/10
 
 Seveneves (Neal Stephenson) - Rating 8.0/10
 
+The Great Gatsby (Scott Fitzgerald) - Rating 10.0/10
+
+Perfume (Patrick Suskind) - Rating 10.0/10 
+
+Mean Genes (Terry Burnham, Jay Phelan) - 8.0/10
+
+
 Header photo &copy; uwaterloo.ca<br>
 {: style="color:gray; font-size: 80%; text-align: left;"}
