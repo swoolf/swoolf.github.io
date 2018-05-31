@@ -45,6 +45,6 @@ You can find the code on [Github](https://github.com/swoolf/pond){:target="_blan
 [1] Mariusz Bojarski, Davide Del Testa, Daniel Dworakowski, Bernhard Firner, Beat Flepp, Prasoon Goyal, Lawrence D. Jackel, Mathew Monfort, Urs Muller, Jiakai Zhang, Xin Zhang, Jake Zhao, and Karol Zieba. End to end learning for self-driving cars, April 25 2016. URL: http://arxiv.org/abs/1604. 07316, arXiv:arXiv:1604.07316.<br><br>
 Header photo &copy; OptiRTC 2018<br>
 Icon photo &copy; Sam Woolf 2018<br>
-Body video &copy; Sam Woolf 2018
+Body video &copy; OptiRTC 2018<br>
 Body Charts &copy; Sam Woolf 2018
 {: style="color:gray; font-size: 80%; text-align: left;"}
