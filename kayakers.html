@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="800" height="300" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<br>
+Distance 0R <input type="range" id="distance" min="0" max="100" value="80"> 2R<br>
+angleOffset 0deg <input type="range" id="angle" min="0" max="100" value="0"> 360deg <br>
+Period 0sec <input type="range" id="period" min="0" max="100" value="50"> 5sec<br>
+
+
+<script>
+var numPaths=8;
+var one = 50.0;
+var dist = 1.7*one;
+var angleOffset=150.*Math.PI/180.;
+var period=2000;
+var time =0;
+var loopTime=50;
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+setInterval(drawAll, loopTime);
+
+function updateVals(){
+  dist = (document.getElementById("distance").value/100.)*2.*one;
+  angleOffset = (document.getElementById("angle").value/100.)*Math.PI;
+  period = (document.getElementById("period").value/100.)*5000.;
+
+
+}
+
+function drawPaths(ctx){
+  for(var i=0;i<numPaths; i++){
+    ctx.beginPath();
+    ctx.arc(2*one+ i*dist, 2*one, one, 0, 2 * Math.PI);
+    ctx.stroke();
+  }
+}
+
+function drawPaddles(ctx, time, offset){
+  var lastLoc=[0,0];
+  for(var i=0;i<numPaths;i++){
+    ctx.beginPath();
+    var yAdd=one*Math.cos(i*angleOffset + 2.*Math.PI*time/period);
+    var xAdd=one*Math.sin(i*angleOffset + 2.*Math.PI*time/period);
+    var curLoc =[2.*one + i*dist +xAdd, 2.*one - yAdd];
+    ctx.arc(curLoc[0], curLoc[1], one/5, 0, 2 * Math.PI);
+
+    ctx.fillStyle = "blue";
+    if (Math.abs(curLoc[1]-lastLoc[1])<10.){
+      if (curLoc[0]<=lastLoc[0]){ctx.fillStyle = "red"; ctx.arc(curLoc[0], curLoc[1], one/2, 0, 2 * Math.PI);}
+    }
+    ctx.fill();
+    lastLoc=curLoc;
+  }
+}
+
+function drawAll(){
+  updateVals();
+  ctx.clearRect(0, 0, c.width, c.height);
+  drawPaths(ctx);
+  drawPaddles(ctx, time);
+  time=time+loopTime;
+}
+
+
+</script>
+
+</body>
+</html>
