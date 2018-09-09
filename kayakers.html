@@ -5,7 +5,8 @@
 <canvas id="myCanvas" width="800" height="300" style="border:1px solid #d3d3d3;">
 Your browser does not support the HTML5 canvas tag.</canvas>
 <br>
-Distance 0R <input type="range" id="distance" min="0" max="100" value="80"> 2R<br>
+Distance 0R <input type="range" id="distance" min="0" max="100" value="80"> 2R
+<br>
 angleOffset 0deg <input type="range" id="angle" min="0" max="100" value="0"> 360deg <br>
 Period 0sec <input type="range" id="period" min="0" max="100" value="50"> 5sec<br>
 
@@ -26,8 +27,9 @@ setInterval(drawAll, loopTime);
 
 function updateVals(){
   dist = (document.getElementById("distance").value/100.)*2.*one;
+  document.getElementById("distVal").innerHTML = dist;
   angleOffset = (document.getElementById("angle").value/100.)*Math.PI;
-  period = (document.getElementById("period").value/100.)*5000.;
+  period = (document.getElementById("period").value/100.)*5000. ;
 
 
 }
