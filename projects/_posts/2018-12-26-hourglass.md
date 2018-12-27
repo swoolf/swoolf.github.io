@@ -6,7 +6,7 @@ tags: myWork iot wood
 image: assets/images/project-images/hourglass/cover.jpg
 icon: assets/images/project-images/hourglass/icon.jpg
 description: >
-  the only prescription is...
+  time and space and sand and wood
 ---
 
 <img src="../assets/images/project-images/hourglass/entangled.jpg" alt="drawing" width="400"/>
