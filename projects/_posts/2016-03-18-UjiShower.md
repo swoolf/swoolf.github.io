@@ -8,7 +8,7 @@ icon: assets/images/project-images/Uji_icon.jpg
 description: >
   the only perscription is...
 ---
-Uji is a showerhead that gradually fades from green to red as users take longer and less efficient showers encouraging users to take shorter, more energy efficient showers. Based on initial user testing, Uji will shorten the average shower time by over 10% and thereby pay for itself completely in energy savings after only 7 months in a home setting and 3 months in a University setting where more individual users are taking showers on any given day. [UjiShower.com](http://ujishower.com/){:target="_blank"}
+Uji is a showerhead that gradually fades from green to red as users take longer and less efficient showers encouraging users to take shorter, more energy efficient showers. Based on initial user testing, Uji will shorten the average shower time by over 10% and thereby pay for itself completely in energy savings after only 7 months in a home setting and 3 months in a University setting where more individual users are taking showers on any given day. 
 <br><br>
 Check out our recent press:
 <a href="http://www.npr.org/sections/alltechconsidered/2013/08/21/213819595/weekly-innovation-hey-youre-taking-too-long-in-the-shower">NPR</a> -
