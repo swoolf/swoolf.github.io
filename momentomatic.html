@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="//cdn.jsdelivr.net/particle-api-js/5/particle.min.js">
+</script>
+<head>
+    <style>
+        .auto            { cursor: auto; }
+        .default         { cursor: default; }
+        .pointer         { cursor: pointer; }
+    </style>
+    </head>
+<body>
+
+<div style="width: 520px; overflow: hidden;">
+    <div style="width: 260px; float: left;">
+        <img src="https://image.flaticon.com/icons/svg/56/56991.svg" alt="unfinished bingo card" onclick="doFunction('up')" width="200" hspace="40" class="pointer"/>
+        <center id="up"></center>
+    </div>
+</div>
+
+</body>
+
+<script>
+var particle = new Particle();
+var token ='f9b796cbd8d6eec5fe8dba8161a448a66024b8e3' ;
+var devID = '30001d001747343438323536';
+
+window.onload = refreshCounts();
+// window.setInterval(function(){refreshCounts();}, 1000);
+
+function refreshCounts(){
+    doFunction('checkUp');
+    doFunction('checkDown');
+    }
+
+function updateCounts(count, loc){
+    if (loc == 'up' || loc=='checkUp'){
+        document.getElementById('up').innerHTML = count;
+        }
+    else if (loc == 'down' || 'checkDown'){
+        document.getElementById('down').innerHTML = count;
+        }
+    }
+
+function scroll(){
+    console.log('scroll');
+    document.body.style.cursor = "pointer";
+    }
+
+function doFunction(inputString){
+  console.log(inputString);
+  var publishEventPr = particle.publishEvent({ name: 'label', data: '1,2,1,2,1,2,1,4,1,4', auth: token });
+
+    publishEventPr.then(
+      function(data) {
+        if (data.body.ok) { console.log("Event published succesfully") }
+        },
+        function(err) {
+          console.log("Failed to publish event: " + err)
+          }
+        );
+    }
+
+
+    </script>
+</html>
