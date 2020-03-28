@@ -24,6 +24,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 future: true
 markdown: kramdown
 exclude:
+  - vendor
   - CNAME
   - links.jsonp
   - server.sh
